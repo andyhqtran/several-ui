@@ -22,6 +22,7 @@ const StyledFieldContent = styled.div`
 const StyledFieldHint = styled.div`
   color: #938E8C;
   font-size: 14px;
+  font-style: italic;
 `;
 
 const StyledFieldLabel = styled.label`
