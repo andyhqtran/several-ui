@@ -8,6 +8,11 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     line-height: 24px;
   }
+
+  ::selection {
+    background-color: #DB3317;
+    color: #FFFFFF;
+  }
 `;
 
 export default GlobalStyles;
