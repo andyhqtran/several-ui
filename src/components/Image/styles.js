@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 import Card from '../Card';
+import Icon from '../Icon';
 
 const StyledImage = styled(Card)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #FBF9F8;
   padding: 4px;
   box-shadow:
@@ -10,6 +14,10 @@ const StyledImage = styled(Card)`
     inset 0 0 0 4px #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
+
+  ${Icon.Element} {
+    color: #938E8C;
+  }
 `;
 
 const StyledImageEntity = styled.img`

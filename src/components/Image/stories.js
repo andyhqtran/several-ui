@@ -8,4 +8,7 @@ storiesOf('Molecules|Image', module)
     <Image
       src="//placehold.it/280x170/FBF9F8/FBF9F8"
     />
+  ))
+  .add('has no image', () => (
+    <Image />
   ));
