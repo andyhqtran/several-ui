@@ -1,5 +1,15 @@
-import { addParameters, configure } from '@storybook/react';
+import { addDecorator, addParameters, configure } from '@storybook/react';
 import { create } from '@storybook/theming';
+import React, { Fragment } from 'react';
+
+import GlobalStyles from '../src/components/GlobalStyles';
+
+addDecorator((module) => (
+  <Fragment>
+    <GlobalStyles />
+    {module()}
+  </Fragment>
+));
 
 const stories = require.context('../src/components', true, /\/stories\.js$/);
 
