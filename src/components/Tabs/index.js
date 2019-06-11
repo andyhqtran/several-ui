@@ -5,6 +5,7 @@ import { StyledTabs, StyledTabsItem } from './styles';
 
 const Tabs = props => (
   <Tabs.Element
+    className={props.className}
     role="tablist"
     tabIndex={props.tabIndex}
   >
@@ -35,6 +36,7 @@ Tabs.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
   onSelect: PropTypes.func.isRequired,
   selected: PropTypes.oneOfType([
     PropTypes.number,
