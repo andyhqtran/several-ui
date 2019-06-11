@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import Button from '../Button';
 import ButtonGroup from '.';
 
-storiesOf('Layout|Button Group', module)
+storiesOf('Layouts|Button Group', module)
   .add('is default', () => (
     <ButtonGroup>
       <Button
