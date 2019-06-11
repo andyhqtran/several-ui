@@ -30,6 +30,7 @@ Navigation.propTypes = {
   ]).isRequired,
   className: PropTypes.string,
   direction: PropTypes.oneOf(['horizontal', 'vertical']),
+  selected: PropTypes.string.isRequired,
 };
 
 export default Navigation;
