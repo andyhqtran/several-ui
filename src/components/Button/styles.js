@@ -1,4 +1,4 @@
-import { rgba } from 'polished';
+import { lighten, rgba } from 'polished';
 import styled, { css } from 'styled-components';
 
 const primaryStyles = css`
@@ -7,6 +7,12 @@ const primaryStyles = css`
     inset 0 0 0 1px ${rgba('#000000', 0.12)},
     0 2px 0 ${rgba('#000000', 0.08)};
   color: #FFFFFF;
+  transition: background-color 0.2s ease;
+
+  &:focus,
+  &:hover {
+    background-color: ${lighten(0.12, '#DB3317')};
+  }
 `;
 
 const secondaryStyles = css`
@@ -15,19 +21,28 @@ const secondaryStyles = css`
     inset 0 0 0 1px #DB3317,
     0 2px 0 ${rgba('#000000', 0.08)};
   color: #DB3317;
+  transition: background-color 0.2s ease;
+
+  &:focus,
+  &:hover {
+    background-color: ${rgba('#DB3317', 0.12)};
+  }
 `;
 
 const tertiaryStyles = css`
   background-color: transparent;
   box-shadow: none;
-  color: #2F1814;
+  color: #DB3317;
+  transition: color 0.2s ease;
 
+  &:focus,
   &:hover {
-    color: #DB3317;
+    color: ${lighten(0.12, '#DB3317')};
   }
 `;
 
 const StyledButton = styled.button`
+  outline: none;
   height: 40px;
   border: 0;
   border-radius: 4px;
