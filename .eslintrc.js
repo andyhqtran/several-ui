@@ -19,6 +19,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "max-len": 0,
         "import/no-extraneous-dependencies": 0,
         "import/prefer-default-export": 0,
         "react/default-props-match-prop-types": 0,
