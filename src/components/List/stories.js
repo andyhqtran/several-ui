@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import List from './index';
+import List from '.';
 
 storiesOf('Atoms|List', module)
   .add('is default', () => (

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Tabs from './index';
+import Tabs from '.';
 
 storiesOf('Atoms|Tabs', module)
   .add('is default', () => (
