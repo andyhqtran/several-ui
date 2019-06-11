@@ -16,7 +16,7 @@ const StyledTabsItem = styled.div`
     margin-right: 0;
   }
 
-  ${(props) => props.selected && css`
+  ${props => props.selected && css`
     box-shadow: inset 0 -2px 0 #000;
     color: #2F1814;
     font-weight: 500;

@@ -37,11 +37,11 @@ const StyledButton = styled.button`
   line-height: 40px;
   cursor: pointer;
 
-  ${(props) => props.variant === 'primary' && primaryStyles};
+  ${props => props.variant === 'primary' && primaryStyles};
 
-  ${(props) => props.variant === 'secondary' && secondaryStyles};
+  ${props => props.variant === 'secondary' && secondaryStyles};
 
-  ${(props) => props.variant === 'tertiary' && tertiaryStyles};
+  ${props => props.variant === 'tertiary' && tertiaryStyles};
 `;
 
 export { StyledButton };
