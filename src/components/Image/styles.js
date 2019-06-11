@@ -15,6 +15,8 @@ const StyledImage = styled(Card)`
 const StyledImageEntity = styled.img`
   display: block;
   width: 100%;
+  pointer-events: none;
+  user-select: none;
 `;
 
 export {
