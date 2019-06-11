@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Children, cloneElement } from 'react';
+import React, { Children } from 'react';
 
 import { StyledNavigation, StyledNavigationItem, StyledNavigationTitle } from './styles';
 
@@ -8,10 +8,16 @@ const Navigation = props => (
     className={props.className}
     direction={props.direction}
   >
-    {Children.map(props.children, child => cloneElement(child, {
-      direction: props.direction,
-      selected: props.selected === child.props.to,
-    }))}
+    {Children.map(props.children, child => (
+      <Navigation.Item
+        direction={props.direction}
+        onClick={child.props.onClick}
+        selected={props.selected === child.props.to}
+        to={child.props.to}
+      >
+        {child.props.children}
+      </Navigation.Item>
+    ))}
   </Navigation.Element>
 );
 

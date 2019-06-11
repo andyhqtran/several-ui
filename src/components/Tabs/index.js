@@ -9,22 +9,18 @@ const Tabs = props => (
     role="tablist"
     tabIndex={props.tabIndex}
   >
-    {Children.toArray(props.children).map((tab, index) => {
-      const selected = props.selected === (tab.props.index || index);
-
-      return (
-        <Tabs.Item
-          index={tab.props.index}
-          key={tab.props.index || index}
-          onClick={() => props.onSelect(tab.props.index || index)}
-          role="tab"
-          selected={selected}
-          tabIndex={tab.props.tabIndex}
-        >
-          {tab.props.children}
-        </Tabs.Item>
-      );
-    })}
+    {Children.toArray(props.children).map((tab, index) => (
+      <Tabs.Item
+        index={tab.props.index}
+        key={tab.props.index || index}
+        onClick={() => props.onSelect(tab.props.index || index)}
+        role="tab"
+        selected={props.selected === (tab.props.index || index)}
+        tabIndex={tab.props.tabIndex}
+      >
+        {tab.props.children}
+      </Tabs.Item>
+    ))}
   </Tabs.Element>
 );
 
