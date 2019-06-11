@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   body {
+    background-color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
