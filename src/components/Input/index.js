@@ -6,6 +6,7 @@ import { StyledInput } from './styles';
 const Input = forwardRef((props, ref) => (
   <Input.Element
     autoComplete={props.autoComplete}
+    className={props.className}
     disabled={props.disabled}
     id={props.id}
     onBlur={props.onBlur}
@@ -30,6 +31,7 @@ Input.defaultProps = {
 
 Input.propTypes = {
   autoComplete: PropTypes.oneOf(['off', 'on']),
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   onBlur: PropTypes.func,
