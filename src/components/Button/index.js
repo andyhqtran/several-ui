@@ -4,14 +4,14 @@ import React, { forwardRef } from 'react';
 import { StyledButton } from './styles';
 
 const Button = forwardRef((props, ref) => (
-  <StyledButton
+  <Button.Element
     className={props.className}
     onClick={props.onClick}
     ref={ref}
     variant={props.variant}
   >
     {props.children}
-  </StyledButton>
+  </Button.Element>
 ));
 
 Button.Element = StyledButton;
