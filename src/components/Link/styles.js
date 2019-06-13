@@ -5,7 +5,7 @@ const StyledLink = styled.a`
   display: inline-flex;
   align-items: center;
   color: #DB3317;
-  font-size: ${rem(16)};
+  font-size: ${rem(14)};
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
