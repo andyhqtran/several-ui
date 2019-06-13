@@ -9,7 +9,7 @@ const SecondaryHeading = props => (
   </SecondaryHeading.Element>
 );
 
-SecondaryHeading.Element = StyledPrimaryHeading;
+SecondaryHeading.Element = StyledSecondaryHeading;
 
 SecondaryHeading.propTypes = {
   className: PropTypes.string,
