@@ -7,6 +7,7 @@ const StyledPost = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin-bottom: 24px;
 
   ${Image.Element} {
     margin-bottom: 4px;
@@ -28,6 +29,12 @@ const StyledPostAuthor = styled.div`
   line-height: ${rem(24)};
 `;
 
+const StyledPostDetails = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const StyledPostMeta = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,6 +51,7 @@ const StyledPostTitle = styled.h4`
 export {
   StyledPost,
   StyledPostAuthor,
+  StyledPostDetails,
   StyledPostMeta,
   StyledPostTitle,
 };
