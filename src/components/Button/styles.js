@@ -43,14 +43,18 @@ const tertiaryStyles = css`
 
 const StyledButton = styled.button`
   outline: none;
+  display: ${props => props.fullwidth ? 'block' : 'inline-block'};
+  width: ${props => props.fullwidth ? '100%' : 'auto'};
   height: 40px;
   border: 0;
   border-radius: 4px;
   padding: 0 16px;
+  box-sizing: border-box;
   font-size: ${rem(14)};
   font-weight: 500;
   line-height: 40px;
   cursor: pointer;
+  vertical-align: baseline;
 
   ${props => props.variant === 'primary' && primaryStyles};
 

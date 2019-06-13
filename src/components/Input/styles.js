@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const StyledInput = styled.input`
   outline: none;
+  display: ${props => props.fullwidth ? 'block' : 'inline-block'};
+  width: ${props => props.fullwidth ? '100%' : 'auto'};
   background: #FFFFFF;
   height: 40px;
   border: 0;
@@ -13,6 +15,7 @@ const StyledInput = styled.input`
   padding: 0 16px;
   color: #2F1814;
   font-size: ${rem(14)};
+  vertical-align: top;
   transition: box-shadow 0.2s ease;
 
   &:focus {

@@ -6,6 +6,7 @@ import { StyledButton } from './styles';
 const Button = forwardRef((props, ref) => (
   <Button.Element
     className={props.className}
+    fullwidth={props.fullwidth}
     onClick={props.onClick}
     ref={ref}
     variant={props.variant}
@@ -28,6 +29,7 @@ Button.propTypes = {
     PropTypes.node,
   ]).isRequired,
   className: PropTypes.string,
+  fullwidth: PropTypes.bool,
   onClick: PropTypes.func,
   variant: PropTypes.oneOf([
     'primary',

@@ -8,6 +8,7 @@ const Input = forwardRef((props, ref) => (
     autoComplete={props.autoComplete}
     className={props.className}
     disabled={props.disabled}
+    fullwidth={props.fullwidth}
     id={props.id}
     onBlur={props.onBlur}
     onChange={props.onChange}
@@ -33,6 +34,7 @@ Input.propTypes = {
   autoComplete: PropTypes.oneOf(['off', 'on']),
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  fullwidth: PropTypes.bool,
   id: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
