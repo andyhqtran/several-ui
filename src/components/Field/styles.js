@@ -3,7 +3,14 @@ import styled from 'styled-components';
 
 import Input from '../Input';
 
-const StyledField = styled.div``;
+const StyledField = styled.div`
+  margin-bottom: 12px;
+
+  &:last-child,
+  &:only-child {
+    margin-bottom: 0;
+  }
+`;
 
 const StyledFieldContent = styled.div`
   display: flex;
