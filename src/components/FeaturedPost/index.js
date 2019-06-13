@@ -36,9 +36,9 @@ const Post = props => (
 
 Post.Author = StyledFeaturedPostAuthor;
 
-Post.Element = StyledFeaturedPost;
-
 Post.Details = StyledFeaturedPostDetails;
+
+Post.Element = StyledFeaturedPost;
 
 Post.Meta = StyledFeaturedPostMeta;
 
