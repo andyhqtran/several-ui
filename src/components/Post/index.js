@@ -26,11 +26,13 @@ const Post = props => (
         <Post.Title>{props.name}</Post.Title>
         <Post.Author>{props.author}</Post.Author>
       </Post.Meta>
-      <Badge>
-        {props.price > 0
-          ? `$${props.price}`
-          : 'Free'}
-      </Badge>
+      {typeof props.price === 'number' && (
+        <Badge>
+          {props.price > 0
+            ? `$${props.price}`
+            : 'Free'}
+        </Badge>
+      )}
     </Post.Details>
   </Post.Element>
 );
