@@ -2,9 +2,10 @@ import { rem } from 'polished';
 import styled from 'styled-components';
 
 const StyledParagraph = styled.p`
-  margin-bottom: 24px;
+  margin-top: 0;
+  margin-bottom: 12px;
   color: #5F5452;
-  font-size: ${rem(16)};
+  font-size: ${rem(14)};
   line-height: ${rem(24)};
 
   &:last-child,
