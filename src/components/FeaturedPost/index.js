@@ -25,8 +25,9 @@ const Post = props => (
         <Post.Author>{props.author}</Post.Author>
       </Post.Meta>
       <Button onClick={props.onClick}>
-        Purchase for $
-        {props.price}
+        {props.price > 0
+          ? `Purchase for $${props.price}`
+          : 'Download for free'}
       </Button>
     </Post.Details>
     <Link href="/faq/featured-post">How can I get my theme featured?</Link>
