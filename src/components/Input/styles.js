@@ -1,4 +1,4 @@
-import { rgba } from 'polished';
+import { rem, rgba } from 'polished';
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
@@ -12,7 +12,7 @@ const StyledInput = styled.input`
     inset 0 3px 0 ${rgba('#000000', 0.02)};
   padding: 0 16px;
   color: #2F1814;
-  font-size: 14px;
+  font-size: ${rem(14)};
   transition: box-shadow 0.2s ease;
 
   &:focus {

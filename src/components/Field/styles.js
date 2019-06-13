@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled from 'styled-components';
 
 import Input from '../Input';
@@ -21,12 +22,12 @@ const StyledFieldContent = styled.div`
 
 const StyledFieldHint = styled.div`
   color: #938E8C;
-  font-size: 14px;
+  font-size: ${rem(14)};
   font-style: italic;
 `;
 
 const StyledFieldLabel = styled.label`
-  font-size: 14px;
+  font-size: ${rem(14)};
   font-weight: 500;
 `;
 

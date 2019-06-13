@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 
 import Card from '../Card';
@@ -5,7 +6,7 @@ import Card from '../Card';
 const sharedStyles = css`
   padding-right: 24px;
   padding-left: 24px;
-  font-size: 14px;
+  font-size: ${rem(14)};
   font-weight: 500;
 `;
 

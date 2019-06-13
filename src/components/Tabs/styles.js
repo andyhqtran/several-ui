@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 
 const StyledTabs = styled.div`
@@ -8,8 +9,8 @@ const StyledTabs = styled.div`
 const StyledTabsItem = styled.div`
   margin-right: 48px;
   color: #5F5452;
-  font-size: 16px;
-  line-height: 48px;
+  font-size: ${rem(16)};
+  line-height: ${rem(48)};
   cursor: pointer;
 
   &:last-child {

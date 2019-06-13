@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 
 const StyledNavigation = styled.div.attrs({
@@ -11,7 +12,7 @@ const StyledNavigation = styled.div.attrs({
 `;
 
 const StyledNavigationItem = styled.div`
-  font-size: 14px;
+  font-size: ${rem(14)};
   cursor: pointer;
 
   ${props => props.direction === 'horizontal' && css`
@@ -29,7 +30,7 @@ const StyledNavigationItem = styled.div`
 `;
 
 const StyledNavigationTitle = styled.div`
-  font-size: 16px;
+  font-size: ${rem(16)};
   font-weight: 600;
 
   ${props => props.direction === 'horizontal' && css`

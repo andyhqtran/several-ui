@@ -1,10 +1,11 @@
+import { rem } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   body {
     background-color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: ${rem(16)};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 24px;

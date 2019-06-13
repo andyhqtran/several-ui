@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled from 'styled-components';
 
 import Icon from '../Icon';
@@ -18,7 +19,7 @@ const StyledBreadcrumbDivider = styled(Icon).attrs({
 
 const StyledBreadcrumbItem = styled.div`
   color: ${props => props.selected ? '#DB3317' : '#5F5452'};
-  font-size: 14px;
+  font-size: ${rem(14)};
   font-weight: 500;
 `;
 

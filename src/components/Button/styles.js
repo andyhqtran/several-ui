@@ -1,4 +1,4 @@
-import { lighten, rgba } from 'polished';
+import { lighten, rem, rgba } from 'polished';
 import styled, { css } from 'styled-components';
 
 const primaryStyles = css`
@@ -47,7 +47,7 @@ const StyledButton = styled.button`
   border: 0;
   border-radius: 4px;
   padding: 0 16px;
-  font-size: 14px;
+  font-size: ${rem(14)};
   font-weight: 500;
   line-height: 40px;
   cursor: pointer;

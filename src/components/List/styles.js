@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled from 'styled-components';
 
 const StyledList = styled.div.attrs({
@@ -11,12 +12,12 @@ const StyledListItem = styled.div.attrs({
   role: 'listitem',
 })`
   margin-bottom: 12px;
-  font-size: 14px;
+  font-size: ${rem(14)};
 `;
 
 const StyledListTitle = styled.div`
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: ${rem(16)};
   font-weight: 600;
 `;
 
