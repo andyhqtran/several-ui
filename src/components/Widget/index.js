@@ -13,11 +13,11 @@ Widget.Element = StyledWidget;
 Widget.Title = StyledWidgetTitle;
 
 Widget.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
 };
 
 export default Widget;

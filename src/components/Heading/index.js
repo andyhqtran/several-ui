@@ -26,11 +26,11 @@ Heading.defaultProps = {
 };
 
 Heading.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
   variant: PropTypes.oneOf([
     'primary',
     'secondary',

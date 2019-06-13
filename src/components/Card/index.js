@@ -12,11 +12,11 @@ const Card = props => (
 Card.Element = StyledCard;
 
 Card.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
 };
 
 export default Card;
