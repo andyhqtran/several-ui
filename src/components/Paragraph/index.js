@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledParagraph } from './styles';
 
-const Paragraph = props => (
+const Paragraph = (props) => (
   <Paragraph.Element className={props.className}>
     {props.children}
   </Paragraph.Element>

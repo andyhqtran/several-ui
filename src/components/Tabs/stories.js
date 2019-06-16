@@ -8,15 +8,15 @@ storiesOf('Atoms|Tabs', module)
   .add('is default', () => (
     <Tabs
       onSelect={action('tab selected')}
-      selected="all"
+      selected='all'
     >
-      <Tabs.Item index="all">
+      <Tabs.Item index='all'>
         All
       </Tabs.Item>
-      <Tabs.Item index="popular">
+      <Tabs.Item index='popular'>
         Most popular
       </Tabs.Item>
-      <Tabs.Item index="latest">
+      <Tabs.Item index='latest'>
         Latest
       </Tabs.Item>
     </Tabs>

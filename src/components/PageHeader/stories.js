@@ -16,6 +16,6 @@ storiesOf('Molecules|Page Header', module)
           selected: true,
         },
       ]}
-      name="Page name"
+      name='Page name'
     />
   ));

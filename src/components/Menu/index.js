@@ -8,7 +8,7 @@ import {
   StyledMenuItem,
 } from './styles';
 
-const Menu = props => (
+const Menu = (props) => (
   <Menu.Element className={props.className}>
     {props.children}
   </Menu.Element>

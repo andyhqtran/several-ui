@@ -3,12 +3,12 @@ import React, { Children } from 'react';
 
 import { StyledNavigation, StyledNavigationItem, StyledNavigationTitle } from './styles';
 
-const Navigation = props => (
+const Navigation = (props) => (
   <Navigation.Element
     className={props.className}
     direction={props.direction}
   >
-    {Children.map(props.children, child => (
+    {Children.map(props.children, (child) => (
       <Navigation.Item
         direction={props.direction}
         onClick={child.props.onClick}

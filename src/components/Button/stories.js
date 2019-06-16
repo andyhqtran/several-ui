@@ -8,7 +8,7 @@ storiesOf('Atoms|Button', module)
   .add('is primary', () => (
     <Button
       onClick={action('button clicked')}
-      variant="primary"
+      variant='primary'
     >
       Button
     </Button>
@@ -16,7 +16,7 @@ storiesOf('Atoms|Button', module)
   .add('is secondary', () => (
     <Button
       onClick={action('button clicked')}
-      variant="secondary"
+      variant='secondary'
     >
       Button
     </Button>
@@ -24,7 +24,7 @@ storiesOf('Atoms|Button', module)
   .add('is tertiary', () => (
     <Button
       onClick={action('button clicked')}
-      variant="tertiary"
+      variant='tertiary'
     >
       Button
     </Button>

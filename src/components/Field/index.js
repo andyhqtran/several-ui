@@ -20,9 +20,9 @@ import {
 const Field = (props) => {
   const context = useContext(FormContext);
 
-  const children = Children.toArray(props.children).filter(child => child.type !== Field.Hint && child.type !== Field.Label);
+  const children = Children.toArray(props.children).filter((child) => child.type !== Field.Hint && child.type !== Field.Label);
 
-  const metaChildren = Children.toArray(props.children).filter(child => child.type === Field.Hint || child.type === Field.Label);
+  const metaChildren = Children.toArray(props.children).filter((child) => child.type === Field.Hint || child.type === Field.Label);
 
   return (
     <Field.Element className={props.className}>

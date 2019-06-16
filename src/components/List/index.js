@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledList, StyledListItem, StyledListTitle } from './styles';
 
-const List = props => (
+const List = (props) => (
   <List.Element className={props.className}>
     {props.children}
   </List.Element>

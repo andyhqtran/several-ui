@@ -5,10 +5,10 @@ import Breadcrumb from '../Breadcrumb';
 import Heading from '../Heading';
 import { StyledPageHeader } from './styles';
 
-const PageHeader = props => (
+const PageHeader = (props) => (
   <PageHeader.Element className={props.className}>
     <Breadcrumb items={props.items} />
-    <Heading variant="primary">
+    <Heading variant='primary'>
       {props.name}
     </Heading>
   </PageHeader.Element>

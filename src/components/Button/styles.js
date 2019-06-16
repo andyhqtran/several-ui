@@ -43,8 +43,8 @@ const tertiaryStyles = css`
 
 const StyledButton = styled.button`
   outline: none;
-  display: ${props => props.fullwidth ? 'block' : 'inline-block'};
-  width: ${props => props.fullwidth ? '100%' : 'auto'};
+  display: ${(props) => props.fullwidth ? 'block' : 'inline-block'};
+  width: ${(props) => props.fullwidth ? '100%' : 'auto'};
   height: 40px;
   border: 0;
   border-radius: 4px;
@@ -56,11 +56,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   vertical-align: baseline;
 
-  ${props => props.variant === 'primary' && primaryStyles};
+  ${(props) => props.variant === 'primary' && primaryStyles};
 
-  ${props => props.variant === 'secondary' && secondaryStyles};
+  ${(props) => props.variant === 'secondary' && secondaryStyles};
 
-  ${props => props.variant === 'tertiary' && tertiaryStyles};
+  ${(props) => props.variant === 'tertiary' && tertiaryStyles};
 `;
 
 export { StyledButton };

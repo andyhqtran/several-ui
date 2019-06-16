@@ -4,7 +4,7 @@ import React from 'react';
 
 import { StyledLink } from './styles';
 
-const Link = props => (
+const Link = (props) => (
   <Link.Next
     as={props.as}
     href={props.href}

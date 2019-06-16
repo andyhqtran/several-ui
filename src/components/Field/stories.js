@@ -14,7 +14,7 @@ storiesOf('Layouts|Field', module)
         <Field.Hint>Field hint</Field.Hint>
         <Input />
         <Input />
-        <Button type="submit">Button</Button>
+        <Button type='submit'>Button</Button>
       </Field>
     </Form>
   ))
@@ -24,7 +24,7 @@ storiesOf('Layouts|Field', module)
         <Field.Label>Field label</Field.Label>
         <Field.Hint>Field hint</Field.Hint>
         <Input />
-        <Button type="submit">Button</Button>
+        <Button type='submit'>Button</Button>
       </Field>
     </Form>
   ))

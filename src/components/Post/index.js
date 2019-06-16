@@ -12,7 +12,7 @@ import {
   StyledPostTitle,
 } from './styles';
 
-const Post = props => (
+const Post = (props) => (
   <Post.Element
     className={props.className}
     onClick={props.onClick}

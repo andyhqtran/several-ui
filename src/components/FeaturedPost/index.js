@@ -41,7 +41,7 @@ const Post = (props) => {
           {getButtonText()}
         </Button>
       </Post.Details>
-      <Link href="/faq/featured-post">How can I get my theme featured?</Link>
+      <Link href='/faq/featured-post'>How can I get my theme featured?</Link>
     </Post.Element>
   );
 };

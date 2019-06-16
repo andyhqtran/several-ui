@@ -7,7 +7,7 @@ import Input from '../Input';
 import Paragraph from '../Paragraph';
 import Widget from '../Widget';
 
-const NewsletterWidget = props => (
+const NewsletterWidget = (props) => (
   <Widget.Element className={props.className}>
     <Widget.Title>
       Newsletter
@@ -18,13 +18,13 @@ const NewsletterWidget = props => (
     <Field>
       <Input
         fullwidth
-        placeholder="Enter email addresss"
+        placeholder='Enter email addresss'
       />
     </Field>
     <Field>
       <Button
         fullwidth
-        variant="primary"
+        variant='primary'
       >
         Subscribe
       </Button>

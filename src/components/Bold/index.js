@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledBold } from './styles';
 
-const Bold = props => (
+const Bold = (props) => (
   <Bold.Element>
     {props.children}
   </Bold.Element>

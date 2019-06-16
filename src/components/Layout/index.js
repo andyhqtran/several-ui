@@ -8,7 +8,7 @@ import {
   StyledLayoutSidebar,
 } from './styles';
 
-const Layout = props => (
+const Layout = (props) => (
   <Layout.Element className={props.className}>
     {props.children}
   </Layout.Element>

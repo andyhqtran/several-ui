@@ -9,7 +9,7 @@ const ELEMENT_MAP = {
   tertiary: 'h3',
 };
 
-const Heading = props => (
+const Heading = (props) => (
   <Heading.Element
     as={ELEMENT_MAP[props.variant]}
     className={props.className}

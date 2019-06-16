@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledCard } from './styles';
 
-const Card = props => (
+const Card = (props) => (
   <Card.Element className={props.className}>
     {props.children}
   </Card.Element>

@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledBadge } from './styles';
 
-const Badge = props => (
+const Badge = (props) => (
   <Badge.Element className={props.className}>
     {props.children}
   </Badge.Element>

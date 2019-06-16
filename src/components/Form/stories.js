@@ -16,9 +16,9 @@ storiesOf('Layout|Form', module)
         </Field.Label>
         <Input
           disabled
-          name="username"
-          placeholder="Username"
-          value="several"
+          name='username'
+          placeholder='Username'
+          value='several'
         />
       </Field>
       <Field>
@@ -26,13 +26,13 @@ storiesOf('Layout|Form', module)
           Name
         </Field.Label>
         <Input
-          name="first_name"
-          placeholder="First name"
+          name='first_name'
+          placeholder='First name'
           required
         />
         <Input
-          name="last_name"
-          placeholder="Last name"
+          name='last_name'
+          placeholder='Last name'
           required
         />
       </Field>
@@ -41,10 +41,10 @@ storiesOf('Layout|Form', module)
           Email address
         </Field.Label>
         <Input
-          name="email"
-          placeholder="Email address"
+          name='email'
+          placeholder='Email address'
           required
-          type="email"
+          type='email'
         />
       </Field>
       <Field>
@@ -52,17 +52,17 @@ storiesOf('Layout|Form', module)
           Password
         </Field.Label>
         <Input
-          name="password"
-          placeholder="Password"
+          name='password'
+          placeholder='Password'
           required
-          type="password"
+          type='password'
         />
       </Field>
       <ButtonGroup>
-        <Button type="submit">Save</Button>
+        <Button type='submit'>Save</Button>
         <Button
-          type="reset"
-          variant="secondary"
+          type='reset'
+          variant='secondary'
         >
           Reset
         </Button>

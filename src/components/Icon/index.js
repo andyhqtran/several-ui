@@ -115,7 +115,7 @@ const getIcon = (name, size) => {
   }
 };
 
-const Icon = props => (
+const Icon = (props) => (
   <Icon.Element className={props.className}>
     {getIcon(props.name, props.size)}
   </Icon.Element>

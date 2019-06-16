@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledWidget, StyledWidgetTitle } from './styles';
 
-const Widget = props => (
+const Widget = (props) => (
   <Widget.Element className={props.className}>
     {props.children}
   </Widget.Element>

@@ -10,13 +10,13 @@ storiesOf('Layouts|Button Group', module)
     <ButtonGroup>
       <Button
         onClick={action('button clicked')}
-        variant="primary"
+        variant='primary'
       >
         Button
       </Button>
       <Button
         onClick={action('button clicked')}
-        variant="secondary"
+        variant='secondary'
       >
         Button
       </Button>

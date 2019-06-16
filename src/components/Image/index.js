@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from '../Icon';
 import { StyledImage, StyledImageEntity } from './styles';
 
-const Image = props => (
+const Image = (props) => (
   <Image.Element className={props.className}>
     {props.src ? (
       <Image.Entity
@@ -14,7 +14,7 @@ const Image = props => (
       />
     ) : (
       <Icon
-        name="image"
+        name='image'
         size={24}
       />
     )}

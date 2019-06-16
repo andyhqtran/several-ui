@@ -3,10 +3,10 @@ import React, { Children } from 'react';
 
 import { StyledTabs, StyledTabsItem } from './styles';
 
-const Tabs = props => (
+const Tabs = (props) => (
   <Tabs.Element
     className={props.className}
-    role="tablist"
+    role='tablist'
     tabIndex={props.tabIndex}
   >
     {Children.toArray(props.children).map((tab, index) => (
@@ -14,7 +14,7 @@ const Tabs = props => (
         index={tab.props.index}
         key={tab.props.index || index}
         onClick={() => props.onSelect(tab.props.index || index)}
-        role="tab"
+        role='tab'
         selected={props.selected === (tab.props.index || index)}
         tabIndex={tab.props.tabIndex}
       >

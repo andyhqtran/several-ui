@@ -18,7 +18,7 @@ const StyledBreadcrumbDivider = styled(Icon).attrs({
 `;
 
 const StyledBreadcrumbItem = styled.div`
-  color: ${props => props.selected ? '#DB3317' : '#5F5452'};
+  color: ${(props) => props.selected ? '#DB3317' : '#5F5452'};
   font-size: ${rem(14)};
   font-weight: 500;
 `;

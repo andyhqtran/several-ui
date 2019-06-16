@@ -7,7 +7,7 @@ import {
   StyledBreadcrumbItem,
 } from './styles';
 
-const Breadcrumb = props => (
+const Breadcrumb = (props) => (
   <Breadcrumb.Element>
     {props.items.map((item) => {
       if (item.selected) {

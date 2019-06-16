@@ -5,7 +5,7 @@ import Link from '.';
 
 storiesOf('Atoms|Link', module)
   .add('is default', () => (
-    <Link href="https://google.com">
+    <Link href='https://google.com'>
       Link →
     </Link>
   ));
