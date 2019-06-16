@@ -3,31 +3,38 @@ import { storiesOf } from '@storybook/react';
 
 import Button from '../Button';
 import Input from '../Input';
+import Form from '../Form';
 import Field from '.';
 
 storiesOf('Layouts|Field', module)
   .add('is default', () => (
-    <Field>
-      <Field.Label>Field label</Field.Label>
-      <Field.Hint>Field hint</Field.Hint>
-      <Input />
-      <Input />
-      <Button>Button</Button>
-    </Field>
+    <Form>
+      <Field>
+        <Field.Label>Field label</Field.Label>
+        <Field.Hint>Field hint</Field.Hint>
+        <Input />
+        <Input />
+        <Button type="submit">Button</Button>
+      </Field>
+    </Form>
   ))
   .add('has button', () => (
-    <Field>
-      <Field.Label>Field label</Field.Label>
-      <Field.Hint>Field hint</Field.Hint>
-      <Input />
-      <Button>Button</Button>
-    </Field>
+    <Form>
+      <Field>
+        <Field.Label>Field label</Field.Label>
+        <Field.Hint>Field hint</Field.Hint>
+        <Input />
+        <Button type="submit">Button</Button>
+      </Field>
+    </Form>
   ))
   .add('has multiple inputs', () => (
-    <Field>
-      <Field.Label>Field label</Field.Label>
-      <Field.Hint>Field hint</Field.Hint>
-      <Input />
-      <Input />
-    </Field>
+    <Form>
+      <Field>
+        <Field.Label>Field label</Field.Label>
+        <Field.Hint>Field hint</Field.Hint>
+        <Input />
+        <Input />
+      </Field>
+    </Form>
   ));

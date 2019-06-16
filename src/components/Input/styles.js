@@ -5,7 +5,7 @@ const StyledInput = styled.input`
   outline: none;
   display: ${props => props.fullwidth ? 'block' : 'inline-block'};
   width: ${props => props.fullwidth ? '100%' : 'auto'};
-  background: #FFFFFF;
+  background: ${props => props.disabled ? '#FBF9F8' : '#FFFFFF'};
   height: 40px;
   border: 0;
   border-radius: 4px;
@@ -17,6 +17,7 @@ const StyledInput = styled.input`
   font-size: ${rem(14)};
   vertical-align: top;
   transition: box-shadow 0.2s ease;
+  cursor: ${props => props.disabled ? 'not-allowed' : 'text'};
 
   &:focus {
     box-shadow:
