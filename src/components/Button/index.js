@@ -9,6 +9,7 @@ const Button = forwardRef((props, ref) => (
     fullwidth={props.fullwidth}
     onClick={props.onClick}
     ref={ref}
+    type={props.type}
     variant={props.variant}
   >
     {props.children}
@@ -20,6 +21,7 @@ Button.Element = StyledButton;
 Button.displayName = 'Button';
 
 Button.defaultProps = {
+  type: 'button',
   variant: 'primary',
 };
 
@@ -31,6 +33,11 @@ Button.propTypes = {
   className: PropTypes.string,
   fullwidth: PropTypes.bool,
   onClick: PropTypes.func,
+  type: PropTypes.oneOf([
+    'button',
+    'reset',
+    'submit',
+  ]),
   variant: PropTypes.oneOf([
     'primary',
     'secondary',
