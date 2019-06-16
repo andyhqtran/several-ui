@@ -7,6 +7,7 @@ const Input = forwardRef((props, ref) => (
   <Input.Element
     autoComplete={props.autoComplete}
     className={props.className}
+    defaultValue={props.defaultValue}
     disabled={props.disabled}
     fullwidth={props.fullwidth}
     id={props.id}
@@ -33,6 +34,7 @@ Input.defaultProps = {
 Input.propTypes = {
   autoComplete: PropTypes.oneOf(['off', 'on']),
   className: PropTypes.string,
+  defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
   fullwidth: PropTypes.bool,
   id: PropTypes.string,
