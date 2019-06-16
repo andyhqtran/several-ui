@@ -3,7 +3,7 @@ import React from 'react';
 
 import { StyledButtonGroup } from './styles';
 
-const ButtonGroup = props => (
+const ButtonGroup = (props) => (
   <ButtonGroup.Element className={props.className}>
     {props.children}
   </ButtonGroup.Element>
