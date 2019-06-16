@@ -4,6 +4,7 @@ import { BarChart } from 'styled-icons/feather/BarChart';
 import { Bell } from 'styled-icons/feather/Bell';
 import { Bold } from 'styled-icons/feather/Bold';
 import { Bookmark } from 'styled-icons/feather/Bookmark';
+import { Check } from 'styled-icons/feather/Check';
 import { ChevronDown } from 'styled-icons/feather/ChevronDown';
 import { ChevronLeft } from 'styled-icons/feather/ChevronLeft';
 import { ChevronRight } from 'styled-icons/feather/ChevronRight';
@@ -47,6 +48,8 @@ const getIcon = (name, size) => {
       return <Bold height={size} width={size} />;
     case 'bookmark':
       return <Bookmark height={size} width={size} />;
+    case 'check':
+      return <Check height={size} width={size} />;
     case 'chevron-down':
       return <ChevronDown height={size} width={size} />;
     case 'chevron-left':
@@ -131,6 +134,7 @@ Icon.propTypes = {
     'bell',
     'bold',
     'bookmark',
+    'check',
     'chevron-down',
     'chevron-left',
     'chevron-right',
@@ -161,7 +165,7 @@ Icon.propTypes = {
     'users',
     'close',
     'close-circle',
-  ]),
+  ]).isRequired,
   size: PropTypes.number,
 };
 
