@@ -7,7 +7,7 @@ import Field from '../Field';
 import Input from '../Input';
 import Form from '.';
 
-storiesOf('Layout|Form', module)
+storiesOf('Layouts|Form', module)
   .add('is default', () => (
     <Form>
       <Field>
