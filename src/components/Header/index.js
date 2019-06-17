@@ -19,13 +19,13 @@ const Header = (props) => (
         direction='horizontal'
         selected='/'
       >
-        <Navigation.Item to='/'>
+        <Navigation.Item href='/'>
           Home
         </Navigation.Item>
-        <Navigation.Item to='/showcase'>
+        <Navigation.Item href='/showcase'>
           Showcase
         </Navigation.Item>
-        <Navigation.Item to='/authors'>
+        <Navigation.Item href='/authors'>
           Authors
         </Navigation.Item>
       </Navigation>

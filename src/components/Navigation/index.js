@@ -1,3 +1,4 @@
+import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import React, { Children } from 'react';
 
@@ -9,14 +10,20 @@ const Navigation = (props) => (
     direction={props.direction}
   >
     {Children.map(props.children, (child) => (
-      <Navigation.Item
-        direction={props.direction}
-        onClick={child.props.onClick}
-        selected={props.selected === child.props.to}
-        to={child.props.to}
+      <NextLink
+        as={props.as}
+        href={child.props.href}
+        passHref
       >
-        {child.props.children}
-      </Navigation.Item>
+        <Navigation.Item
+          direction={props.direction}
+          href={child.props.href}
+          onClick={child.props.onClick}
+          selected={props.selected === child.props.href}
+        >
+          {child.props.children}
+        </Navigation.Item>
+      </NextLink>
     ))}
   </Navigation.Element>
 );

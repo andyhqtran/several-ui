@@ -1,7 +1,7 @@
 import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 
-const StyledNavigation = styled.div.attrs({
+const StyledNavigation = styled.nav.attrs({
   role: 'navigation',
 })`
   display: flex;
@@ -11,8 +11,10 @@ const StyledNavigation = styled.div.attrs({
   `}
 `;
 
-const StyledNavigationItem = styled.div`
+const StyledNavigationItem = styled.a`
+  color: inherit;
   font-size: ${rem(14)};
+  text-decoration: none;
   cursor: pointer;
 
   ${(props) => props.direction === 'horizontal' && css`
