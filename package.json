@@ -2,8 +2,17 @@
   "name": "@several/ui",
   "version": "0.0.1",
   "description": "Design system for Several.io",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "jsnext:main": "dist/es/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
+    "build:commonjs": "cross-env BABEL_ENV=cjs babel ./src/components --out-dir ./dist/cjs --copy-files",
+    "build:es": "babel ./src/components --out-dir ./dist/es --copy-files",
+    "build": "npm run build:commonjs && npm run build:es",
     "lint:css": "stylelint '**/*.js'",
     "lint:js": "eslint .",
     "lint": "npm run lint:css && npm run lint:js",
@@ -12,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andyhqtran/several-ui.git"
+    "url": "git+https://github.com/severalapp/ui.git"
   },
   "author": "Andy Tran <andy@several.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andyhqtran/several-ui/issues"
+    "url": "https://github.com/severalapp/ui/issues"
   },
-  "homepage": "https://github.com/andyhqtran/several-ui#readme",
+  "homepage": "https://github.com/several/ui#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -31,6 +40,7 @@
     "@storybook/react": "^5.1.3",
     "@storybook/theming": "^5.1.3",
     "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-jsx": "^6.0.2",
