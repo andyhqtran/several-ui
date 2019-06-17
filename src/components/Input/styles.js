@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const StyledInput = styled.input`
   outline: none;
   display: ${(props) => props.fullwidth ? 'block' : 'inline-block'};
-  width: ${(props) => props.fullwidth ? '100%' : 'auto'};
   background: ${(props) => props.disabled ? '#FBF9F8' : '#FFFFFF'};
+  width: ${(props) => props.fullwidth ? '100%' : 'auto'};
   height: 40px;
   border: 0;
   border-radius: 4px;
@@ -16,13 +16,13 @@ const StyledInput = styled.input`
   color: #2F1814;
   font-size: ${rem(14)};
   vertical-align: top;
-  transition: box-shadow 0.2s ease;
   cursor: ${(props) => props.disabled ? 'not-allowed' : 'text'};
+  transition: box-shadow 0.2s ease;
 
   &:focus {
     box-shadow:
       inset 0 0 0 1px #DB3317,
-    inset 0 3px 0 ${rgba('#000000', 0.02)};
+      inset 0 3px 0 ${rgba('#000000', 0.02)};
   }
 `;
 

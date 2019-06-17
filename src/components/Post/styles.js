@@ -6,8 +6,8 @@ import Image from '../Image';
 const StyledPost = styled.div`
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   margin-bottom: 24px;
+  cursor: pointer;
 
   ${Image.Element} {
     margin-bottom: 4px;

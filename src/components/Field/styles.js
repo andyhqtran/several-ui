@@ -14,7 +14,7 @@ const StyledField = styled.div`
 
 const StyledFieldContent = styled.div`
   display: flex;
-  align-itesm: center;
+  align-items: center;
 
   ${Input.Element} {
     flex-grow: 1;

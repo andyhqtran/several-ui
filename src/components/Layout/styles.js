@@ -11,17 +11,17 @@ const StyledLayout = styled.div`
 `;
 
 const StyledLayoutHeader = styled.header`
-  flex-order: 1;
+  order: 1;
   width: 100%;
 `;
 
 const StyledLayoutMain = styled.main`
-  flex-order: 2;
+  order: 2;
   width: calc(100% - 252px);
 `;
 
 const StyledLayoutSidebar = styled.aside`
-  flex-order: 3;
+  order: 3;
   width: 252px;
 `;
 

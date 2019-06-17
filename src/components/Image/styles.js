@@ -8,12 +8,12 @@ const StyledImage = styled(Card)`
   align-items: center;
   justify-content: center;
   background: #FBF9F8;
-  padding: 4px;
+  border-radius: 4px;
   box-shadow:
     inset 0 0 0 1px #E8E6E5,
     inset 0 0 0 4px #FFFFFF;
+  padding: 4px;
   box-sizing: border-box;
-  border-radius: 4px;
 
   ${Icon.Element} {
     color: #938E8C;

@@ -53,8 +53,8 @@ const StyledButton = styled.button`
   font-size: ${rem(14)};
   font-weight: 500;
   line-height: 40px;
-  cursor: pointer;
   vertical-align: baseline;
+  cursor: pointer;
 
   ${(props) => props.variant === 'primary' && primaryStyles};
 
