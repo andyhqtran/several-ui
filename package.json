@@ -29,6 +29,13 @@
     "url": "https://github.com/severalapp/ui/issues"
   },
   "homepage": "https://github.com/several/ui#readme",
+  "peerDependencies": {
+    "styled-components": "*",
+    "polished": "*",
+    "prop-types": "*",
+    "next": "*",
+    "react": "*"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
