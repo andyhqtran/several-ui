@@ -1,7 +1,8 @@
 module.exports = {
+  parser: "babel-eslint",
   "extends": [
     "standard",
-    "standard-jsx",
+    "standard-react",
   ],
   rules: {
     "arrow-parens": ["error", "always"],

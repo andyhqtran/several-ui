@@ -1,55 +1,55 @@
-export { Badge } from './Badge';
+export Badge from './Badge';
 
-export { Bold } from './Bold';
+export Bold from './Bold';
 
-export { Breadcrumb } from './Badge';
+export Breadcrumb from './Breadcrumb';
 
-export { Button } from './Badge';
+export Button from './Button';
 
-export { ButtonGroup } from './Badge';
+export ButtonGroup from './ButtonGroup';
 
-export { Card } from './Badge';
+export Card from './Card';
 
-export { FeaturedPost } from './Badge';
+export FeaturedPost from './FeaturedPost';
 
-export { Field } from './Badge';
+export Field from './Field';
 
-export { Footer } from './Badge';
+export Footer from './Footer';
 
-export { Form } from './Badge';
+export Form from './Form';
 
-export { GlobalStyles } from './Badge';
+export GlobalStyles from './GlobalStyles';
 
-export { Header } from './Badge';
+export Header from './Header';
 
-export { Heading } from './Badge';
+export Heading from './Heading';
 
-export { Icon } from './Badge';
+export Icon from './Icon';
 
-export { Image } from './Badge';
+export Image from './Image';
 
-export { Input } from './Badge';
+export Input from './Input';
 
-export { Layout } from './Badge';
+export Layout from './Layout';
 
-export { Link } from './Badge';
+export Link from './Link';
 
-export { List } from './Badge';
+export List from './List';
 
-export { Logo } from './Badge';
+export Logo from './Logo';
 
-export { Menu } from './Badge';
+export Menu from './Menu';
 
-export { Navigation } from './Badge';
+export Navigation from './Navigation';
 
-export { NewsletterWidget } from './Badge';
+export NewsletterWidget from './NewsletterWidget';
 
-export { PageHeader } from './Badge';
+export PageHeader from './PageHeader';
 
-export { Paragraph } from './Badge';
+export Paragraph from './Paragraph';
 
-export { Post } from './Badge';
+export Post from './Post';
 
-export { Tabs } from './Badge';
+export Tabs from './Tabs';
 
-export { Widget } from './Badge';
+export Widget from './Widget';

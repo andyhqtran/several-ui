@@ -43,6 +43,7 @@ Navigation.defaultProps = {
 };
 
 Navigation.propTypes = {
+  as: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
