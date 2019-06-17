@@ -7,6 +7,7 @@ const StyledNavigation = styled.nav.attrs({
   display: flex;
 
   ${(props) => props.direction === 'vertical' && css`
+    align-items: flex-start;
     flex-direction: column;
   `}
 `;
@@ -16,6 +17,7 @@ const StyledNavigationItem = styled.a`
   font-size: ${rem(14)};
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.2s ease;
 
   ${(props) => props.direction === 'horizontal' && css`
     margin-right: 48px;
@@ -29,11 +31,15 @@ const StyledNavigationItem = styled.a`
     color: #DB3317;
     font-weight: 500;
   `}
+
+  &:hover {
+    color: #DB3317;
+  }
 `;
 
 const StyledNavigationTitle = styled.div`
   font-size: ${rem(16)};
-  font-weight: 600;
+  font-weight: 500;
 
   ${(props) => props.direction === 'horizontal' && css`
     margin-right: 48px;

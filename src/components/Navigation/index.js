@@ -9,22 +9,28 @@ const Navigation = (props) => (
     className={props.className}
     direction={props.direction}
   >
-    {Children.map(props.children, (child) => (
-      <NextLink
-        as={props.as}
-        href={child.props.href}
-        passHref
-      >
-        <Navigation.Item
-          direction={props.direction}
+    {Children.map(props.children, (child) => {
+      if (child.type !== Navigation.Item) {
+        return child;
+      }
+
+      return (
+        <NextLink
+          as={props.as}
           href={child.props.href}
-          onClick={child.props.onClick}
-          selected={props.selected === child.props.href}
+          passHref
         >
-          {child.props.children}
-        </Navigation.Item>
-      </NextLink>
-    ))}
+          <Navigation.Item
+            direction={props.direction}
+            href={child.props.href}
+            onClick={child.props.onClick}
+            selected={props.selected === child.props.href}
+          >
+            {child.props.children}
+          </Navigation.Item>
+        </NextLink>
+      );
+    })}
   </Navigation.Element>
 );
 

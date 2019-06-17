@@ -18,7 +18,7 @@ const StyledListItem = styled.div.attrs({
 const StyledListTitle = styled.div`
   margin-bottom: 12px;
   font-size: ${rem(16)};
-  font-weight: 600;
+  font-weight: 500;
 `;
 
 export {
