@@ -4,7 +4,7 @@ const StyledContentLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 1176px;
-  margin: 0 auto;
+  margin: 0 auto 96px;
   padding-right: 48px;
   padding-left: 48px;
   box-sizing: border-box;

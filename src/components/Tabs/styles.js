@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 const StyledTabs = styled.div`
   display: flex;
   box-shadow: inset 0 -1px 0 #E8E6E5;
+  margin-bottom: 48px;
 `;
 
 const StyledTabsItem = styled.div`
