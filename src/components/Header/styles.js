@@ -7,6 +7,7 @@ import Navigation from '../Navigation';
 const StyledHeader = styled.header`
   position: sticky;
   background: #FFFFFF;
+  margin-bottom: 64px;
   box-shadow:
     inset 0 -1px 0 #E8E6E5,
     0 3px 0 ${rgba('#000000', 0.02)};
