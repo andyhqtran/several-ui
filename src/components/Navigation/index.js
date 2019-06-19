@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import Router from 'next/router';
 import PropTypes from 'prop-types';
 import React, { Children } from 'react';
 
@@ -24,7 +25,7 @@ const Navigation = (props) => (
             direction={props.direction}
             href={child.props.href}
             onClick={child.props.onClick}
-            selected={props.selected === child.props.href}
+            selected={child.props.href === props.selected}
           >
             {child.props.children}
           </Navigation.Item>
@@ -50,7 +51,7 @@ Navigation.propTypes = {
   ]).isRequired,
   className: PropTypes.string,
   direction: PropTypes.oneOf(['horizontal', 'vertical']),
-  selected: PropTypes.string.isRequired,
+  selected: PropTypes.string,
 };
 
 export default Navigation;

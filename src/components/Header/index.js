@@ -1,4 +1,5 @@
-import Router from 'next/router';
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from '../Button';
@@ -17,7 +18,7 @@ const Header = (props) => (
       <Logo />
       <Navigation
         direction='horizontal'
-        selected='/'
+        selected={props.router.pathname}
       >
         <Navigation.Item href='/'>
           Home
@@ -31,13 +32,13 @@ const Header = (props) => (
       </Navigation>
       <ButtonGroup>
         <Button
-          onClick={() => Router.push('/login')}
+          onClick={() => props.router.push('/login')}
           variant='tertiary'
         >
           Sign in
         </Button>
         <Button
-          onClick={() => Router.push('/join')}
+          onClick={() => props.router.push('/join')}
           variant='primary'
         >
           Join Today — It's Free
@@ -51,6 +52,15 @@ Header.Content = StyledHeaderContent;
 
 Header.Element = StyledHeader;
 
-Header.propTypes = {};
+Header.defaultProps = {
+  router: {},
+};
 
-export default Header;
+Header.propTypes = {
+  router: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+    push: PropTypes.func,
+  }),
+};
+
+export default withRouter(Header);

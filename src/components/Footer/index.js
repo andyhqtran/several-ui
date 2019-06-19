@@ -21,10 +21,10 @@ const Footer = (props) => (
           <Navigation.Item href='/about'>
             About
           </Navigation.Item>
-          <Navigation.Item href='/about'>
+          <Navigation.Item href='/blog'>
             Blog
           </Navigation.Item>
-          <Navigation.Item href='/about'>
+          <Navigation.Item href='https://spectrum.chat/several'>
             Community
           </Navigation.Item>
         </Navigation>
@@ -34,13 +34,13 @@ const Footer = (props) => (
           <Navigation.Title>
             Support
           </Navigation.Title>
-          <Navigation.Item href='/about'>
+          <Navigation.Item href='/help'>
             Help center
           </Navigation.Item>
-          <Navigation.Item href='/about'>
-            Affilates
+          <Navigation.Item href='/affiliate'>
+            Affiliate
           </Navigation.Item>
-          <Navigation.Item href='/about'>
+          <Navigation.Item href='/partnerships'>
             Partnerships
           </Navigation.Item>
         </Navigation>
@@ -59,8 +59,8 @@ const Footer = (props) => (
           <Navigation.Item href='/legal/terms-of-service'>
             Terms of service
           </Navigation.Item>
-          <Navigation.Item href='/legal/affilates-disclosure'>
-            Affilates disclosure
+          <Navigation.Item href='/legal/affiliate-disclosure'>
+            Affiliate disclosure
           </Navigation.Item>
         </Navigation>
       </Footer.Column>

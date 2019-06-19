@@ -12,6 +12,7 @@
   "scripts": {
     "build:commonjs": "cross-env BABEL_ENV=cjs babel ./src/components --out-dir ./dist/cjs --copy-files",
     "build:es": "babel ./src/components --out-dir ./dist/es --copy-files",
+    "build:watch": "npm run build:commonjs -- -watch && npm run build:es -- -watch",
     "build": "npm run build:commonjs && npm run build:es",
     "lint:css": "stylelint '**/*.js'",
     "lint:js": "eslint .",
