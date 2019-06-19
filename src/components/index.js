@@ -10,6 +10,8 @@ export ButtonGroup from './ButtonGroup';
 
 export Card from './Card';
 
+export ContentLayout from './ContentLayout';
+
 export FeaturedPost from './FeaturedPost';
 
 export Field from './Field';
@@ -29,8 +31,6 @@ export Icon from './Icon';
 export Image from './Image';
 
 export Input from './Input';
-
-export Layout from './Layout';
 
 export Link from './Link';
 
