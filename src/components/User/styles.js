@@ -8,18 +8,18 @@ import Heading from '../Heading';
 
 const StyledUser = styled(Card)`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   margin-top: 40px;
 
   ${Avatar.Element} {
     background: #FFFFFF;
     width: 80px;
     height: 80px;
-    margin-bottom: -28px;
     box-shadow:
       inset 0 0 0 1px #E8E6E5,
       0 2px 0 ${rgba('#000000', 0.02)};
+    margin-bottom: -28px;
     transform: translateY(-40px);
   }
 
