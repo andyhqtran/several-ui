@@ -28,6 +28,8 @@ export Header from './Header';
 
 export Heading from './Heading';
 
+export Hero from './Hero';
+
 export Icon from './Icon';
 
 export Image from './Image';
