@@ -18,7 +18,7 @@ const Hero = (props) => (
     </Hero.SecondaryTitle>
     <ButtonGroup>
       <Button variant='primary'>
-        View Divi posts
+        View Divi resources
       </Button>
       <Button variant='secondary'>
         View top authors
