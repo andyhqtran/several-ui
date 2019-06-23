@@ -7,7 +7,6 @@ const StyledFeaturedPost = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 
   ${Image.Element} {
     margin-bottom: 12px;
