@@ -25,11 +25,11 @@ const StyledHeading = styled.h1`
   color: #2F1814;
   font-weight: 500;
 
-  ${(props) => props.variants === 'primary' && primaryStyles}
+  ${(props) => props.variant === 'primary' && primaryStyles}
 
-  ${(props) => props.variants === 'secondary' && secondaryStyles}
+  ${(props) => props.variant === 'secondary' && secondaryStyles}
 
-  ${(props) => props.variants === 'tertiary' && tertiaryStyles}
+  ${(props) => props.variant === 'tertiary' && tertiaryStyles}
 `;
 
 export { StyledHeading };
