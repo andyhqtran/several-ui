@@ -1,3 +1,5 @@
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from '../Button';
@@ -17,10 +19,16 @@ const Hero = (props) => (
       We will help you find the perfect Divi resources.
     </Hero.SecondaryTitle>
     <ButtonGroup>
-      <Button variant='primary'>
+      <Button
+        onClick={() => props.router.push('/showcase')}
+        variant='primary'
+      >
         View Divi resources
       </Button>
-      <Button variant='secondary'>
+      <Button
+        onClick={() => props.router.push('/authors')}
+        variant='secondary'
+      >
         View top authors
       </Button>
     </ButtonGroup>
@@ -33,4 +41,10 @@ Hero.SecondaryTitle = StyledHeroSecondaryTitle;
 
 Hero.Title = StyledHeroTitle;
 
-export default Hero;
+Hero.propTypes = {
+  router: PropTypes.shape({
+    push: PropTypes.func,
+  }),
+};
+
+export default withRouter(Hero);
