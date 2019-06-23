@@ -8,7 +8,7 @@ const StyledHero = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 120px 0;
+  margin: 120px 0;
 
   ${Button.Element} {
     height: 56px;
