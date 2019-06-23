@@ -1,4 +1,4 @@
-import { rgba } from 'polished';
+import { rem, rgba } from 'polished';
 import styled from 'styled-components';
 
 import Avatar from '../Avatar';
@@ -24,8 +24,9 @@ const StyledUser = styled(Card)`
   }
 
   ${Heading.Element} {
-    margin=bottom: 8px;
-    font-size: 16px;
+    margin-bottom: 8px;
+    font-size: ${rem(16)};
+    line-height: ${rem(24)};
   }
 `;
 
@@ -44,10 +45,10 @@ const StyledUserMeta = styled.div`
   display: flex;
   flex-direction: column;
   color: #938E8C;
-  font-size: 14px;
+  font-size: ${rem(14)};
 
   ${Bold.Element} {
-    font-size: 16px;
+    font-size: ${rem(16)};
   }
 `;
 
