@@ -54,4 +54,6 @@ export Post from './Post';
 
 export Tabs from './Tabs';
 
+export User from './User';
+
 export Widget from './Widget';
