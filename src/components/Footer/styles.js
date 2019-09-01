@@ -36,6 +36,7 @@ const StyledFooterContent = styled.div`
   max-width: 1176px;
   margin: 0 auto;
   padding: 96px 48px;
+  box-sizing: border-box;
 `;
 
 const StyledFooterCopyright = styled.div`
