@@ -1,3 +1,4 @@
+export AffiliateWidget from './AffiliateWidget';
 export Avatar from './Avatar';
 export Badge from './Badge';
 export Bold from './Bold';

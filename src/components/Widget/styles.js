@@ -11,6 +11,8 @@ const StyledWidget = styled(Card)`
 `;
 
 const StyledWidgetTitle = styled.h4`
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 4px;
   color: #2F1814;
