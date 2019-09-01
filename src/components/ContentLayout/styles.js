@@ -11,12 +11,11 @@ const StyledContentLayout = styled.div`
 `;
 
 const StyledContentLayoutHeader = styled.header`
-  order: 1;
   width: 100%;
 `;
 
 const StyledContentLayoutMain = styled.main`
-  width: calc(100% - 252px);
+  width: ${(props) => props.isFluid ? '100%' : 'calc(100% - 252px)'};
 `;
 
 const StyledContentLayoutSidebar = styled.aside`
