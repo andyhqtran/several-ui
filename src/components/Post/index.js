@@ -47,6 +47,11 @@ Post.Meta = StyledPostMeta;
 
 Post.Title = StyledPostTitle;
 
+Post.defaultProps = {
+  author: 'Author',
+  name: 'Post Title',
+};
+
 Post.propTypes = {
   author: PropTypes.string,
   className: PropTypes.string,
