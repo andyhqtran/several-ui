@@ -9,7 +9,7 @@ import Paragraph from '../Paragraph';
 import Widget from '../Widget';
 
 const NewsletterWidget = (props) => (
-  <Widget.Element className={props.className}>
+  <Widget className={props.className}>
     <Widget.Title>
       Newsletter
     </Widget.Title>
@@ -32,7 +32,7 @@ const NewsletterWidget = (props) => (
         </Button>
       </Field>
     </Form>
-  </Widget.Element>
+  </Widget>
 );
 
 NewsletterWidget.propTypes = {

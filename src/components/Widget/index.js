@@ -10,6 +10,7 @@ const Widget = (props) => (
 );
 
 Widget.Element = StyledWidget;
+
 Widget.Title = StyledWidgetTitle;
 
 Widget.propTypes = {
