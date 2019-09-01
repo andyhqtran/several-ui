@@ -18,7 +18,7 @@ const AffiliateWidget = (props) => (
       </Link>
     </Widget.Title>
     <NextLink href={props.href}>
-      <Fragment>
+      <a>
         {props.image && (
           <Image
             alt={props.image.alt}
@@ -28,7 +28,7 @@ const AffiliateWidget = (props) => (
         <Paragraph>
           <Bold>Divi — The most popular premium WordPress theme in the world.</Bold>
         </Paragraph>
-      </Fragment>
+      </a>
     </NextLink>
   </AffiliateWidget.Element>
 );
