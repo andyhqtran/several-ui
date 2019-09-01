@@ -16,12 +16,10 @@ const StyledContentLayoutHeader = styled.header`
 `;
 
 const StyledContentLayoutMain = styled.main`
-  order: 2;
   width: calc(100% - 252px);
 `;
 
 const StyledContentLayoutSidebar = styled.aside`
-  order: 3;
   width: 252px;
 `;
 
