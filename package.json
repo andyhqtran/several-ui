@@ -2,9 +2,7 @@
   "name": "@several/ui",
   "version": "0.1.0",
   "description": "Design system for Several.io",
-  "main": "dist/cjs/index.js",
-  "module": "dist/es/index.js",
-  "jsnext:main": "dist/es/index.js",
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
