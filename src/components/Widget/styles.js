@@ -5,9 +5,14 @@ import Card from '../Card';
 
 const StyledWidget = styled(Card)`
   background: #FBF9F8;
+  margin-bottom: 24px;
   padding: 24px;
   color: #5F5452;
   font-size: ${rem(14)};
+
+  &;last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const StyledWidgetTitle = styled.h4`
