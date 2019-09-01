@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+const SIDEBAR_WIDTH = 252;
+
+const GUTTER = 48;
+
 const StyledContentLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -15,11 +19,12 @@ const StyledContentLayoutHeader = styled.header`
 `;
 
 const StyledContentLayoutMain = styled.main`
-  width: ${(props) => props.isFluid ? '100%' : 'calc(100% - 252px)'};
+  width: ${(props) => props.isFluid ? '100%' : `calc(100% - ${SIDEBAR_WIDTH} - ${GUTTER}px)`};
+  margin-right: ${GUTTER}px;
 `;
 
 const StyledContentLayoutSidebar = styled.aside`
-  width: 252px;
+  width: ${SIDEBAR_WIDTH}px;
 `;
 
 export {
