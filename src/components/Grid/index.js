@@ -18,6 +18,7 @@ Grid.Element = StyledGrid;
 Grid.defaultProps = {
   columns: 3,
   gap: 24,
+  variant: 'grid',
 };
 
 Grid.propTypes = {
