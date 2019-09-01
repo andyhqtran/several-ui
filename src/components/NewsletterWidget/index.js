@@ -3,6 +3,7 @@ import React from 'react';
 
 import Button from '../Button';
 import Field from '../Field';
+import Form from '../Form';
 import Input from '../Input';
 import Paragraph from '../Paragraph';
 import Widget from '../Widget';
@@ -15,20 +16,22 @@ const NewsletterWidget = (props) => (
     <Paragraph>
       Get product announcements delivered right to your inbox.
     </Paragraph>
-    <Field>
-      <Input
-        fullwidth
-        placeholder='Enter email addresss'
-      />
-    </Field>
-    <Field>
-      <Button
-        fullwidth
-        variant='primary'
-      >
-        Subscribe
-      </Button>
-    </Field>
+    <Form>
+      <Field>
+        <Input
+          fullwidth
+          placeholder='Enter email addresss'
+        />
+      </Field>
+      <Field>
+        <Button
+          fullwidth
+          variant='primary'
+        >
+          Subscribe
+        </Button>
+      </Field>
+    </Form>
   </Widget.Element>
 );
 
