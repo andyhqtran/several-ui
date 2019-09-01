@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import Bold from '../Bold';
 import Image from '../Image';

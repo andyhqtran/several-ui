@@ -11,6 +11,10 @@ const StyledAffiliateWidget = styled(Widget)`
     margin-bottom: 24px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   ${Image.Element} {
     margin-bottom: 12px;
   }
