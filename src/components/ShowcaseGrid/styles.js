@@ -4,8 +4,6 @@ import FeaturedPost from '../FeaturedPost';
 import Grid from '../Grid';
 
 const StyledShowcaseGrid = styled(Grid)`
-  width: 828px;
-
   ${FeaturedPost.Element} {
     align-self: start;
     grid-column-start: span 2;
