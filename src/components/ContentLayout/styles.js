@@ -19,7 +19,7 @@ const StyledContentLayoutHeader = styled.header`
 `;
 
 const StyledContentLayoutMain = styled.main`
-  width: ${(props) => props.isFluid ? '100%' : `calc(100% - ${SIDEBAR_WIDTH} - ${GUTTER}px)`};
+  width: ${(props) => props.isFluid ? '100%' : `calc(100% - ${SIDEBAR_WIDTH}px - ${GUTTER}px)`};
   margin-right: ${GUTTER}px;
 `;
 
