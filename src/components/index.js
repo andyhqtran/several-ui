@@ -18,6 +18,7 @@ export Hero from './Hero';
 export Icon from './Icon';
 export Image from './Image';
 export Input from './Input';
+export LegalNavigationWidget from './LegalNavigationWidget';
 export Link from './Link';
 export List from './List';
 export Logo from './Logo';
