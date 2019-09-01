@@ -27,6 +27,7 @@ export NewsletterWidget from './NewsletterWidget';
 export PageHeader from './PageHeader';
 export Paragraph from './Paragraph';
 export Post from './Post';
+export ShowcaseGrid from './ShowcaseGrid';
 export Tabs from './Tabs';
 export User from './User';
 export Widget from './Widget';
