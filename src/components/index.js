@@ -24,6 +24,8 @@ export Form from './Form';
 
 export GlobalStyles from './GlobalStyles';
 
+export Grid from './Grid';
+
 export Header from './Header';
 
 export Heading from './Heading';
